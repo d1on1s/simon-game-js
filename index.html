@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Simon Game</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<div class="jumbotron">
+<div class="container">
+  <audio src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3" id="a1"></audio>
+  <audio src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3" id="a2"></audio>
+  <audio src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3" id="a3"></audio>
+  <audio src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3" id="a4"></audio>
+  <audio src="media/fail.mp3" id="fail"></audio>
+  <audio src="media/success.mp3" id="success"></audio>
+  <audio src="media/final.mp3" id="final"></audio>
+  <audio src="media/gameover.mp3" id="gameover"></audio>
+  <div class="row justify-content-center">
+    <h1>Simon Game</h1>
+  </div>
+  <div class="row justify-content-center">
+    <button class="btn btn-primary" id="control">Start game!</button>
+  </div>
+  <div class="row justify-content-center">
+    <label class="strict"><input type="checkbox" id="mode" class="strict">Strict mode</label>
+  </div>
+  <div class="row justify-content-center">
+    <h1 id="level"></h1>
+  </div>
+  <div class="row justify-content-center">
+    <button id="b1" class="play btn btn-block btn-outline-success">Green</button>
+    <button id="b2" class="play btn btn-block btn-outline-info">Blue</button>
+    <button id="b3" class="play btn btn-block btn-outline-warning">Orange</button>
+    <button id="b4" class="play btn btn-block btn-outline-danger">Red</button>
+  </div>
+</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
